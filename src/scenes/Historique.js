@@ -5,9 +5,6 @@ import HeaderComponent from '../components/HeaderComponent';
 import ListOptions from '../components/ListOptions';
 import ListV from '../components/ListV';
 import ButtonComponent from '../components/ButtonComponent';
-
-
-
 class Historique extends Component {
 
 
@@ -19,8 +16,8 @@ class Historique extends Component {
       <View style = {styles.lineStyle} />
         <ListV>  </ListV>
       <Text style={styles.Text}> Options </Text>
-        <ListOptions>  </ListOptions>
-        <SafeAreaView style={{flexDirection:'row',alignItems:'center',}}>
+         <ListOptions>  </ListOptions>
+         <SafeAreaView style={{flexDirection:'row',alignItems:'center',}}>
         <View style={styles.buttonContainer}>
             <ButtonComponent
               label={'Afficher'}

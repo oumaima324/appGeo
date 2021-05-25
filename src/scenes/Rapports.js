@@ -3,12 +3,12 @@ import { View, StyleSheet } from 'react-native';
 import HeaderComponent from '../components/HeaderComponent';
 import Searchbar from '../components/Searchbar';
 
-class Commit extends Component {
+class Rapports extends Component {
   render () {
     return (
       <View>
 
-      <HeaderComponent >  Evénements </HeaderComponent>
+      <HeaderComponent >  Rapports Quotidiens </HeaderComponent>
 
       <View style = {styles.lineStyle} />
 
@@ -23,10 +23,10 @@ class Commit extends Component {
   }
   const styles = StyleSheet.create({
     lineStyle:{
-          borderWidth: 5,
-          borderColor:'#808080',
+          borderWidth: 10,
+          borderColor:'#DCDCDC',
           margin:0,
         },
           });
 
-  export default Commit;
+  export default Rapports;
