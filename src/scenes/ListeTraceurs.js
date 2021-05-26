@@ -8,6 +8,9 @@ import Searchbar from '../components/Searchbar';
 
 
 
+
+
+
 const list = [
   {
     name: 'Clio',

@@ -45,7 +45,7 @@ const list = [
 ]
 
 
-class Prametre extends Component {
+class Parametre extends Component {
 
 
   render () {
@@ -78,4 +78,4 @@ class Prametre extends Component {
 );
 }
 }
-export default Prametre;
+export default Parametre;

@@ -4,7 +4,7 @@ import SectionListSidebar from 'react-native-sectionlist-sidebar';
 import HeaderComponent from '../components/HeaderComponent';
 import ButtonComponent from '../components/ButtonComponent';
 
-export default class ListSection extends React.Component {
+ class ListSection extends React.Component {
   state = {
     data: [
       {
@@ -121,3 +121,4 @@ buttonContainer:{
           margin:0,
         },
           });
+export default ListSection;
