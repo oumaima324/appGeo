@@ -53,8 +53,10 @@ class Plus extends Component {
               <ListItem.Title>{item.name}</ListItem.Title>
 
             </ListItem.Content>
-            
-          <ListItem.Chevron  onPress={(item.name.Documents) =>
+            <ListItem.Chevron  onPress={() =>
+            this.props.navigation.navigate('')
+          }/>
+          <ListItem.Chevron  onPress={() =>
             this.props.navigation.navigate('Historique')
           }/>
 

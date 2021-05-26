@@ -23,7 +23,12 @@
     "react": "17.0.1",
     "react-native": "^0.64.0",
     "react-native-action-button": "^2.8.5",
+<<<<<<< HEAD
     "react-native-circle-button": "^1.0.9",
+=======
+    "react-native-date-picker": "^3.3.0",
+    "react-native-datepicker": "^1.7.2",
+>>>>>>> b725af8e4304a929c06c442870ac76ed069f4287
     "react-native-elements": "^3.4.1",
     "react-native-floating-action": "^1.21.0",
     "react-native-gesture-handler": "^1.10.3",

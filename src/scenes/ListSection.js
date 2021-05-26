@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, SectionList,SafeAreaView, Button } from 'react-native';
-import SectionListSidebar from 'react-native-sectionlist-sidebar';
+
 import HeaderComponent from '../components/HeaderComponent';
 import ButtonComponent from '../components/ButtonComponent';
 
