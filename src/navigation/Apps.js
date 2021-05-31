@@ -22,9 +22,7 @@ import VisiteTechnique from '../scenes/VisiteTechnique';
 
 import RapportQuotidiens from '../scenes/RapportQuotidiens';
 import 'react-native-gesture-handler';
-import
-  MaterialCommunityIcons
-from 'react-native-vector-icons/MaterialCommunityIcons';
+
 const Tab = createBottomTabNavigator();
 
 const Tab = createBottomTabNavigator();

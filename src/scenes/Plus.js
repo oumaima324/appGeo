@@ -12,18 +12,10 @@ const list = [
   {
     name: 'Paramètres',
     avatar_url: 'https://img.icons8.com/windows/2x/settings--v1.png',
-<<<<<<< HEAD
-=======
-    Screen:'Parametres',
->>>>>>> imane
   },
   {
     name: 'Rapport Quotidiens',
       avatar_url: 'https://img.icons8.com/dotty/2x/report-file.png',
-<<<<<<< HEAD
-=======
-      Screen:'RapportQuotidiens',
->>>>>>> imane
 
   },
   {
