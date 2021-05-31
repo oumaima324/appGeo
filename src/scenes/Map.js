@@ -1,4 +1,5 @@
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
+import MapView,  { PROVIDER_GOOGLE } from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
+import { Marker } from 'react-native-maps';
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
@@ -25,8 +26,12 @@ const Map = () =>{ return (
          latitudeDelta: 0.015,
          longitudeDelta: 0.0121,
        }}
-     >
+     ><Marker
+     coordinate={{ latitude : 34.0242,  longitude : -6.822734 }}
+    
+   />
      </MapView>
+
    </View>
 );
 };

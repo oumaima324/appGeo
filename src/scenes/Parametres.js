@@ -3,6 +3,7 @@ import { ListItem } from 'react-native-elements';
 import { StyleSheet, View, Text, FlatList, SafeAreaView} from 'react-native';
 import HeaderComponent from '../components/HeaderComponent';
 import ButtonComponent from '../components/ButtonComponent';
+<<<<<<< HEAD
 import Parametre from '../components/Parametre';
 
 class Parametres extends Component {
@@ -18,10 +19,26 @@ class Parametres extends Component {
          
         
          <SafeAreaView style={{flexDirection:'row',alignItems:'center',}}>
+=======
+
+import Parametre from '../components/Parametre';
+
+class Parametres extends Component {
+    render () {
+      return (
+        <View>
+  
+     <HeaderComponent label='Parametres' 
+      style={{paddingBottom: 15,paddingTop: 15, backgroundColor:'#C0C0C0'}}/>
+        <View style = {styles.lineStyle} />
+        <View style = {styles.lineStyle} />
+        <Parametre>  </Parametre>
+>>>>>>> imane
         <View style={styles.buttonContainer}>
             <ButtonComponent
               label={'Sauvegarder'}
               style={{
+<<<<<<< HEAD
                  backgroundColor:'#FA8072',
                  }}
             />
@@ -54,3 +71,25 @@ class Parametres extends Component {
        });
 
 export default Parametres;
+=======
+                 backgroundColor:'#A71F3C',
+                 }}
+            />
+          </View>
+
+</View>
+
+    )
+  }
+
+  }
+  const styles = StyleSheet.create({
+    lineStyle:{
+          borderWidth: 5,
+          borderColor:'#808080',
+          margin:0,
+        },
+          });
+
+  export default Parametres;
+>>>>>>> imane

@@ -8,7 +8,11 @@ class Evénements extends Component {
     return (
       <View>
 
+<<<<<<< HEAD
       <HeaderComponent >  Evénement</HeaderComponent>
+=======
+      <HeaderComponent label='Evénements' style={{paddingBottom: 15,paddingTop: 15, backgroundColor:'#C0C0C0'}}/>
+>>>>>>> imane
 
       <View style = {styles.lineStyle} />
 
