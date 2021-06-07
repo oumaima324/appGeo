@@ -12,10 +12,12 @@ const list = [
   {
     name: 'Paramètres',
     avatar_url: 'https://img.icons8.com/windows/2x/settings--v1.png',
+    Screen:'Parametres',
   },
   {
     name: 'Rapport Quotidiens',
       avatar_url: 'https://img.icons8.com/dotty/2x/report-file.png',
+      Screen:'RapportQuotidiens',
 
   },
   {
@@ -44,7 +46,7 @@ class Plus extends Component {
   render () {
     return (
       <View>
-      <HeaderComponent>Plus</HeaderComponent>
+      <HeaderComponent label='Plus' style={{paddingBottom: 15,paddingTop: 15, backgroundColor:'#C0C0C0'}}/>
       <View style = {styles.lineStyle} />
 
       <FlatList
@@ -55,16 +57,8 @@ class Plus extends Component {
             <Avatar source={{uri: item.avatar_url}} />
             <ListItem.Content>
               <ListItem.Title>{item.name}</ListItem.Title>
-
             </ListItem.Content>
-            <ListItem.Chevron  onPress={() =>
-            this.props.navigation.navigate('')
-          }/>
-          <ListItem.Chevron  onPress={() =>
-            this.props.navigation.navigate('Historique')
-          }/>
-
-
+            <ListItem.Chevron onPress={() => this.props.navigation.navigate(item.Screen)} />
           </ListItem>
         )}
       />

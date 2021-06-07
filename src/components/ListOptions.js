@@ -7,6 +7,7 @@ import Checkboxs from '../components/Checkboxs';
 
 
 
+
 const list = [
 {
   name: 'Durée d arret',
@@ -39,7 +40,7 @@ class ListOptions extends Component {
     return (
       <View>
 
-
+     
        <FlatList
          keyExtractor = {(item, index) => index.toString()}
          data={list}

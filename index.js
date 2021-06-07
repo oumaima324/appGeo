@@ -3,10 +3,12 @@
  */
 import React, {Component} from 'react';
 import {Text, View, AppRegistry} from 'react-native';
-import Map from './src/scenes/Map';
+import MapScreen from './src/scenes/MapScreen';
 
 
 
 
-AppRegistry.registerComponent('TrackingApp', () =>Map);
+
+
+AppRegistry.registerComponent('TrackingApp', () =>MapScreen);
 

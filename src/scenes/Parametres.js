@@ -25,8 +25,7 @@ class Parametres extends Component {
             />
           </View>
              
-        </SafeAreaView>
-
+    
 
 
 

@@ -22,70 +22,24 @@ import VisiteTechnique from '../scenes/VisiteTechnique';
 
 import RapportQuotidiens from '../scenes/RapportQuotidiens';
 import 'react-native-gesture-handler';
-
-const Tab = createBottomTabNavigator();
+import  MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Tab = createBottomTabNavigator();
 function TabNavigateur(){
   return (
 
-return (
-    <NavigationContainer style={styles.navigationContaier}>
-      <Tab.Navigator >
-        <Tab.Screen name="Traceurs" component={ListeTraceurs} options={{
-          tabBarLabel: 'Traceurs',
-          tabBarIcon: ({ color }) => (
-            <Icon
-   name='map-marker-alt'
-   type='font-awesome-5'
-   color='#A71F3C' />
-
-           ),
-        }} />
-        <Tab.Screen name="Historique" component={Historique} options={{
-          tabBarLabel: 'Historique',
-          tabBarColor: 'red',
-          tabBarIcon: ({ color }) => (
-            <Icon
-   name='monument'
-    type='font-awesome-5'
-    color='#A71F3C' />
-
-           ),
-
-        }} />
-        <Tab.Screen name="Map" component={Map} options={{
-          tabBarLabel: 'Map',
-          tabBarIcon: ({ color }) => (
-            <Icon
-   name='globe-europe'
-   type='font-awesome-5'
-   color='#A71F3C'  />
-
-           ),
-        }}/>
-        <Tab.Screen name="evenement" component={Evénements} options={{
-          tabBarLabel: 'Evénements',
-          tabBarIcon: ({ color }) => (
-            <Icon
-   name='exclamation-triangle'
-   type='font-awesome-5'
-   color='#A71F3C' />
-
-           ),
-        }} />
-        <Tab.Screen name="Plus" component={Plus} options={{
-          tabBarLabel: 'Plus',
-          tabBarIcon: ({ color}) => (
-            <Icon
-   name='ellipsis-h'
-   type='font-awesome-5'
-   color='#A71F3C' />
-
-           ),
-        }} />
-
-
+        <Tab.Navigator >
+          <Tab.Screen name="Traceurs" component={TraceurStack} options={{ tabBarLabel: 'Traceurs',tabBarIcon: ({ color }) => (
+              <Icon name='map-marker-alt' type='font-awesome-5'color='#A71F3C' />   ),}} />
+          <Tab.Screen name="Historique" component={Historique} options={{ tabBarLabel: 'Historique', tabBarColor: 'red',  tabBarIcon: ({ color }) => (
+              <Icon name='monument'  type='font-awesome-5'  color='#A71F3C' />),}} />
+          <Tab.Screen name="Map" component={Map} options={{tabBarLabel: 'Map',tabBarIcon: ({ color }) => (
+              <Icon name='globe-europe' type='font-awesome-5' color='#A71F3C'  /> ),  }}/>
+          <Tab.Screen name="evenement" component={Evénements} options={{  tabBarLabel: 'Evénements',tabBarIcon: ({ color }) => (
+              <Icon name='exclamation-triangle' type='font-awesome-5' color='#A71F3C' />   ),  }} />
+          <Tab.Screen name="Plus" component={Plus} options={{ tabBarLabel: 'Plus',  tabBarIcon: ({ color}) => (
+              <Icon   name='ellipsis-h'   type='font-awesome-5'   color='#A71F3C' /> ),  }} />
+        </Tab.Navigator>
 
     );
 }
